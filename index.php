@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Blog de Videojuegos</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 </head>
 
 <body>
@@ -51,7 +52,7 @@
                 <form action="login.php" method="POST">
                     <label for="email">Email</label>
                     <input type="email" name="email">
-                    
+
                     <label for="password">Contraseña</label>
                     <input type="password" name="password">
 
@@ -62,14 +63,14 @@
                 <h3>Registrate</h3>
                 <form action="registro.php" method="POST">
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre">    
+                    <input type="text" name="nombre">
 
                     <label for="apellidos">Apellidos</label>
                     <input type="text" name="apellidos">
-                    
+
                     <label for="email">Email</label>
                     <input type="email" name="email">
-                    
+
                     <label for="password">Contraseña</label>
                     <input type="password" name="password">
 
@@ -77,56 +78,56 @@
                 </form>
             </div>
         </aside>
-        
+
         <!--Caja Principal-->
         <div id="principal">
-            <h1>Ultimas entradas</h1>            
+            <h1>Ultimas entradas</h1>
             <article class="entrada">
                 <h2>Titulo de mi entrada</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
             </article>
-            
+
             <article class="entrada">
                 <h2>Titulo de mi entrada</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
             </article>
-            
+
             <article class="entrada">
                 <h2>Titulo de mi entrada</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
             </article>
-            
+
             <article class="entrada">
                 <h2>Titulo de mi entrada</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
             </article>
-            
+
             <article class="entrada">
                 <h2>Titulo de mi entrada</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
             </article>
@@ -134,6 +135,9 @@
     </div>
 
     <!--Pie de Página-->
+    <footer id="pie">
+        <p>Desarrollado por Ariel Munoz &copy; 2020</p>
+    </footer>
 </body>
 
 </html>

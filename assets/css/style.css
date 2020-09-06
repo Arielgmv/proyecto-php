@@ -1,0 +1,25 @@
+/*Fuentes*/
+@font-face {
+    font-family: "fajala";
+    src: url(../fonts/fuente.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Generales*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif, Helvetica, Arial;
+    text-decoration: none;
+}
+
+/*limpiar los flotados*/
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+body {
+    background: url(../img/cubes.png) #f4f4f4;
+}
