@@ -42,6 +42,7 @@
                 </li>
             </ul>
         </nav>
+        <div class="clearfix"></div>
     </header>
 
     <div id="contenedor">
@@ -132,6 +133,7 @@
                 </p>
             </article>
         </div>
+        <div class="clearfix"></div>
     </div>
 
     <!--Pie de Página-->
