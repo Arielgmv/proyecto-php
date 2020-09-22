@@ -8,3 +8,6 @@
 
  mysqli_query($db, "SET NAMES 'utf8'");//si viene alguna información de la BBDD
  //con ñ o tildes que funcione correctamente
+
+ //Iniciar la sesión
+ session_start();
