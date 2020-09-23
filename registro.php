@@ -1,6 +1,9 @@
 <?php
-session_start();
 if (isset($_POST)) {
+    //Conexión a la base de datos
+    require_once 'includes/conexion.php';
+    //Inicar sesión
+    session_start();
     //Recoger los valores del formulario de registro
     $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : false;
     $apellidos = isset($_POST['apellidos']) ? $_POST['apellidos'] : false;
@@ -43,10 +46,28 @@ if (isset($_POST)) {
     $guardar_usuario = false;
     if (count($errores)==0) {
         $guardar_usuario = true;
+        //Cifrar la contraseña
+        $password_segura = password_hash($password, PASSWORD_BCRYPT, ['cost'=>4]);
+        /*echo('<pre>');
+        var_dump($password);
+        var_dump($password_segura);
+        var_dump(password_verify('password', $password_segura));
+        die();*/
+
         //Insertar usuario en la tabla usuarios de la BBDD
-             
+        $sql = "INSERT INTO usuarios VALUES(null, '$nombre', '$apellidos', '$email', '$password_segura', CURDATE());";
+        $guardar = mysqli_query($db, $sql);
+        
+        /*var_dump(mysqli_error($db));
+        die();*/
+        
+        if ($guardar) {
+            $_SESSION['completado'] = "El registro se ha completado con exito";
+        } else {
+            $_SESSION['errores']['general'] = "Fallo al guardar el usuario!!!   ";
+        }
     } else {
-        $_SESSION['errores'] = $errores;
-        header('Location: index.php');
-    }    
+        $_SESSION['errores'] = $errores;        
+    }
+    header('Location: index.php');
 }
