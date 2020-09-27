@@ -4,6 +4,15 @@ require_once 'includes/conexion.php';
 
 //Recoger los datos del formulario
 if (isset($_POST)) {
+    //Borrar error antiguo
+    if (isset($_SESSION['error_login'])) {
+        session_unset($_SESSION['error_login']);
+    }
+    
+    /*var_dump($_SESSION['error_login']);
+    die();*/
+
+    //Recoger datos del formulario
     $email = trim($_POST['email']);
     $password = $_POST['password'];
 }
@@ -20,11 +29,7 @@ if ($login && mysqli_num_rows($login) == 1) {
     
     if ($verify) {
         //Utilizar una sesión para guardar los datos del usuario logueado
-        $_SESSION['usuario'] = $usuario;
-
-        if (isset($_SESSION['error_login'])) {
-            session_unset($_SESSION['error_login']);
-        }
+        $_SESSION['usuario'] = $usuario;        
     }else {
         //Si algo falla, enviar una sesión con el fallo
         $_SESSION['error_login'] = "Login Incorrecto";

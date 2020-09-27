@@ -4,11 +4,21 @@
     <?php if(isset($_SESSION['usuario'])): ?>
         <div id="usuario-logueado" class="bloque">
             <h3>Bienvenido, <?=$_SESSION['usuario']['nombre'].' '.$_SESSION['usuario']['apellidos'];?></h3>
-            <pre><?php var_dump($_SESSION['usuario']); ?></pre>
+            <!--Botones-->
+            <a href="cerrar.php" class="boton boton-verde">Crear Entradas</a>
+            <a href="cerrar.php" class="boton boton-naranja">Mis Datos</a>
+            <a href="cerrar.php" class="boton">Cerrar Sesion</a>
         </div>
     <?php endif; ?>
     <div id="register" class="bloque">
         <h3>Identificate</h3>
+
+        <?php if(isset($_SESSION['error_login'])): ?>
+        <div class="alerta alerta-error">
+            <?=$_SESSION['error_login'];?>
+        </div>
+        <?php endif; ?>
+
         <form action="login.php" method="POST">
             <label for="email">Email</label>
             <input type="email" name="email">
