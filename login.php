@@ -39,5 +39,6 @@ if ($login && mysqli_num_rows($login) == 1) {
     $_SESSION['error_login'] = "Login Incorrecto";
 }
 
+
 //Redirigir al index.php
 header('Location: index.php');
