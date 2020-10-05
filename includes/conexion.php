@@ -10,4 +10,6 @@
  //con ñ o tildes que funcione correctamente
 
  //Iniciar la sesión
- session_start();
+ if (!isset($_SESSION)) {
+    session_start();
+ }
